@@ -12,24 +12,55 @@ to "matching" functions/files in inkscape,
 assemble a loose directory structure
 
 
-major modes: 
+
+Design: come up with modes, document which other modes they should
+be composable with:
+
 cartesian navigation mode hjkl = west, north, south, east
+ability to set default unit in terms of pixels or of elements
+of the vector drawing
+composes with:
+numeric prefixes
+
+
 polar navigation mode = hjkl = clockwise rotation,  
+ability to set default unit in terms of pixels, degrees, radians,
+or of elements of the vector drawing
+composes with:
+numeric prefixes
+visual selection mode
+
+
 command mode = ex mode in vi, used to issue commands
+composable with: nothing, or is it?
 
 
-minor modes:
-visual selection mode = composes with navigation modes to allow
+visual selection mode = 
+pre-requisite:
+navigation mode to allow
 for selecting objects
+composes with: 
 
 
 geometric modes:
 leverage geometric knowledge to allow for 
 more powerful visual editing 
 
+triangle mode:
+inherits from polygon mode
+
+square mode:
+inherits from polygon mode
+more powerful square specific keybindings
+composes with:
+navigation mode to allow you to move the square around or modify
+specific parts of the square e.g. a corner
+
 polygon mode: allows you to make modification
 to polygon based on the median point
 
-curve mode or bezier curve mode or something:
+bezier curve mode:
+
+polynomial mode?:
 
 
