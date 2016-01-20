@@ -1,0 +1,35 @@
+WIP
+
+steps to compile this:
+1. install cmake, this is for inkscape
+2. run cmake in inkscape/inkscape-launchpad, 
+2.5 when it fails, read cmake readme, install dependencies, fix it.
+3. successfully compile emacs lisp foreign function interface
+4. Uhm stuff, idk?
+probably start off by trying to match up files from 
+evil that look like they'll be useful or have analagous roles
+to "matching" functions/files in inkscape,
+assemble a loose directory structure
+
+
+major modes: 
+cartesian navigation mode hjkl = west, north, south, east
+polar navigation mode = hjkl = clockwise rotation,  
+command mode = ex mode in vi, used to issue commands
+
+
+minor modes:
+visual selection mode = composes with navigation modes to allow
+for selecting objects
+
+
+geometric modes:
+leverage geometric knowledge to allow for 
+more powerful visual editing 
+
+polygon mode: allows you to make modification
+to polygon based on the median point
+
+curve mode or bezier curve mode or something:
+
+
